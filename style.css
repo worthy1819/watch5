@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to left, #f6c2ef 0%, #a7c1ee 100%);
+}
+
+#nav-1 {
+    display: none;
+}
+
+#nav-2 {
+    display: flex;
+}
+
+#home {
+    background-image: url(https://www.sammobile.com/wp-content/uploads/2022/08/Samsung-Galaxy-Watch-5-Pro-Colors.jpg);
+    height: 100dvh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#home .text {
+    text-align: center;
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.heading {
+    font-size: 36px;
+    line-height: 40px;
+    padding: 16px;
+    text-align: center;
+    color: white;
+}
+
+.cards {
+    border: 2px solid white;
+    padding: 24px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+}
+
+.cards h1 {
+    font-size: 26px;
+    padding: 5px;
+}
+
+.cards p {
+    padding: 5px;
+}
+
+#performance {
+    background-image: url(https://static1.srcdn.com/wordpress/wp-content/uploads/2022/11/galaxy-watch-5-colors.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#health .health-card {
+    padding: 16px;
+    padding-top: 60px;
+}
+
+#health .health-card p {
+    font-size: 20px;
+    padding: 16px;
+    text-align: center;
+}
+
+.faqs {
+    padding: 30px; 
+    color: white;
+}
+
+.faq .collapse {
+    border: 2px solid white;
+    margin: 16px;
+}
+
+.collapse .collapse-content {
+    border-top: 2px solid white;
+}
+
+.collapse .collapse-content p {
+    padding: 16px;
+}
+
+.cta {
+    background-image: url(https://i.gadgets360cdn.com/large/samsung_galaxy_watch_5_samsung_1682151581809.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 768px) {
+    #nav-1 {
+        display: flex;
+    }
+
+    #nav-2 {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    #home .text h1 {
+        font-size: 26px;
+    }
+
+    #home .text p {
+        font-size: 18px;
+    }
+
+    .heading {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .cards h1 {
+        font-size: 20px;
+    }
+
+    .cards p {
+        font-size: 16px;
+    }
+
+    #health .health-card {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    #health .health-card p {
+        font-size: 18px;
+    }
+
+    #health .health-card img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+
+    
+}
