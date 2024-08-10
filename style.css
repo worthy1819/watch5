@@ -163,6 +163,124 @@ section {
 
 @media only screen and (max-width: 480px) {
 
+    #home .text {
+        padding: 6px;
+        width: 100%;
+    }
 
+    #home .text h1 {
+        font-size: 20px;
+        padding: 0px;
+    }
+
+    #home .text p {
+        font-size: 16px;
+    }
+
+    .heading {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    #features .card-con {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    #health .health-card {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    #health .health-card p {
+        font-size: 16px;
+    }
+
+    #health .health-card img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .faq .faqs {
+        padding-left: 10px;
+    }
+
+    .faq .collapse {
+        margin: 8px;
+    }
+
+    .collapse .collapse-title {
+        font-size: 18px;
+    }
     
+    .collapse .collapse-content p {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 330px) {
+
+    .heading {
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .cards h1 {
+        font-size: 18px;
+    }
+
+    .cards p {
+        font-size: 14px;
+    }
+
+    #performance .performance-con {
+        font-size: 16px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    #health .health-card {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    #health .health-card {
+        padding: 0px;
+    }
+
+    #health .health-card p {
+        font-size: 16px;
+    }
+
+    #health .health-card img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .faq .faqs {
+        padding-left: 4px;
+    }
+
+    .faq .collapse {
+        margin: 8px;
+    }
+
+    .collapse .collapse-title {
+        font-size: 16px;
+        padding: 8px;
+    }
+    
+    .collapse .collapse-content p {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+
 }
