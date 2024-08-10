@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
 body {
     background-image: linear-gradient(to left, #f6c2ef 0%, #a7c1ee 100%);
 }
@@ -45,24 +50,29 @@ section {
     line-height: 40px;
     padding: 16px;
     text-align: center;
-    color: white;
+    color: #333333;
 }
 
 .cards {
-    border: 2px solid white;
+    border: 2px solid #bbbbbb;
     padding: 24px;
     text-align: center;
-    color: white;
     border-radius: 8px;
+}
+
+.cards:hover {
+    background-image: linear-gradient(to right, #84b7e3, #e8a3d1);
 }
 
 .cards h1 {
     font-size: 26px;
     padding: 5px;
+    color: #333333;
 }
 
 .cards p {
     padding: 5px;
+    color: #333333;
 }
 
 #performance {
@@ -80,20 +90,41 @@ section {
     font-size: 20px;
     padding: 16px;
     text-align: center;
+    color: #555555;
+}
+
+#comparison .health-card {
+    padding: 16px;
+    padding-top: 60px;
+}
+
+#comparison .health-card p {
+    font-size: 20px;
+    padding: 16px;
+    text-align: center;
+    color: #555555;
 }
 
 .faqs {
     padding: 30px; 
-    color: white;
 }
 
 .faq .collapse {
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.599);
     margin: 16px;
+}
+
+.faq .collapse:hover {
+    background-image: linear-gradient(to right, #84b7e3, #e8a3d1); 
+}
+
+.collapse .collapse-title {
+    color: #555555;
 }
 
 .collapse .collapse-content {
     border-top: 2px solid white;
+    color: #333333;
 }
 
 .collapse .collapse-content p {
@@ -155,6 +186,21 @@ section {
         width: 50%;
     }
 
+    #comparison .health-card {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    #comparison .health-card p {
+        font-size: 18px;
+    }
+
+    #comparison .health-card img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
     footer {
         font-size: 16px;
     }
@@ -195,6 +241,21 @@ section {
     }
 
     #health .health-card img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #comparison .health-card {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    #comparison .health-card p {
+        font-size: 16px;
+    }
+
+    #comparison .health-card img {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -258,6 +319,25 @@ section {
     }
 
     #health .health-card img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #comparison .health-card {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    #comparison .health-card {
+        padding: 0px;
+    }
+
+    #comparison .health-card p {
+        font-size: 16px;
+    }
+
+    #comparison .health-card img {
         display: block;
         margin-left: auto;
         margin-right: auto;
