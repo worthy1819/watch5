@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /private/
-Allow: /public/
-Sitemap: https://worthy1819.github.io/watch5/sitemap.xml
